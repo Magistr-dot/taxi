@@ -5,7 +5,6 @@ fun passenger(i: Int) = Passenger("P-$i")
 
 fun drivers(indices: List<Int>) = indices.map(::driver).toSet()
 fun drivers(range: IntRange) = drivers(range.toList())
-fun drivers(vararg indices: Int) = drivers(indices.toList())
 
 fun passengers(indices: List<Int>) = indices.map(::passenger).toSet()
 fun passengers(range: IntRange) = passengers(range.toList())
